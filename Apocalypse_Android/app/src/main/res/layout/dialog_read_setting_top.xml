@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/book_pop"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/read_dialog_bg"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+        <ImageButton
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/return_button"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <!--    android:gravity　屬性是對該view中內容的限定．比如一個button 上面的text. 你可以設置該text 相對於view的靠左，靠右等位置．
+android:layout_gravity是用來設置該view相對與父view 的位置．比如一個button 在linearlayout里，你想把該button放在linearlayout里靠左、靠右等位置就可以通過該屬性設置．
+即android:gravity用於設置View中內容相對於View組件的對齊方式，而android:layout_gravity用於設置View組件相對於Container的對齊方式。
+當Linear Layout為水平時，可以設置上下  當Linear Layout為垂直時，可以設置左右      -->
+            <ImageButton
+                android:id="@+id/btn_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black" />
+
+            <ImageButton
+                android:id="@+id/btn_listener_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
